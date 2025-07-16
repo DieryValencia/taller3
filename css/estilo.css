@@ -1,44 +1,118 @@
-body{
-    font-family: Arial;
-    font-size: 12px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-nav{
-    background-color: #613d1b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #00d9ff;
 }
 
-nav > span {
-    padding: 10px;
-    background-color: #c1e481;
-    border: 1px solid #0e0d0d;
-    margin-right: 5px;
-    cursor: pointer;
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-nav > span:hover {
-    background-color: #cbcaf0;
+nav span {
+  background-color: #00d9ff;
+  color: #1e1e2f;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#ejemplo1, #ejemplo2, #ejemplo3, #ejemplo4 {
-    display: none;
+nav span:hover {
+  background-color: #00b6d4;
+  transform: scale(1.05);
 }
 
-#enunciado, #resultado {
-    width: 70%;
-    padding: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+table {
+  width: 90%;
+  margin: auto;
+  background-color: #2d2f40;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00000050;
+  padding: 20px;
+  color: #e0e0e0;
 }
 
-#resultado {
-    width: 30%;
-    padding: 10px;
-    background-color: #e0f7fa;
-    border: 1px solid #ccc;
-    text-align: center;
-    color: rgb(68, 67, 67);
+td#enunciado {
+  width: 60%;
+  padding: 20px;
+  vertical-align: top;
+}
+
+td#resultado {
+  width: 40%;
+  padding: 20px;
+  background-color: #222433;
+  border-left: 2px solid #00d9ff;
+}
+
+input[type="button"] {
+  background-color: #00d9ff;
+  color: #1e1e2f;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #00b6d4;
+  transform: scale(1.03);
+}
+
+div[id^="ejemplo"] {
+  display: none; /* Oculta todos los ejemplos inicialmente */
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 10px;
+  background-color: #1a1b2f;
+  text-align: right;  
+  font-size: 14px;
+  color: #aaa;
+  border-top: 2px solid #00d9ff;
+  width: 100%;              
+  box-sizing: border-box; 
+}
+
+footer p {
+  margin: 5px 0;       
+  text-align: center;  
+}
+
+footer a {
+  color: #00d9ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #00b6d4;
 }
